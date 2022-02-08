@@ -59,7 +59,7 @@ def date_sec(str_date):
 
 # чтоб мог прочитать нужно сохранять в json формате в программе PHPmyAdmin из опенсервера
 #  с новым плагином json , в hostimane не создает валидный json и не забываем encoding='utf-8'
-filname='table_28.json'
+filname='table_49.json'
 with open(filname, encoding='utf-8') as f:
     pop_data=json.load(f)
 pop_data=pop_data[2]
@@ -142,7 +142,7 @@ def date_povr(massiv):
    print("\n massiv2 {}".format(len(massiv2)))
    return massiv2
 
-year_mass=['1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020']
+year_mass=['1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021']
 
 names_kl, k_povr=[],[]
 for year in year_mass:

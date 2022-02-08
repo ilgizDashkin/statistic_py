@@ -15,7 +15,7 @@ import math
 # import geocoder
 from time import sleep
 
-filname='table_28.json'
+filname='table_44.json'
 with open(filname, encoding='utf-8') as f:
     pop_data=json.load(f)
 pop_data=pop_data[2]
@@ -257,22 +257,6 @@ def all_lenght(str1):
     #   print(result[0])
       lenght=re.search(r'\d+', result[0])    
       return (int(lenght[0]))
-
-# очищаем данные если нужно
-# pop_data[10394]
-# pop_data.remove(pop_data[10395])#удаляем пустой
-# pop_data.remove(pop_data[0])# удаляем 1  field1  field2
-# pop_data.remove(pop_data[0])#         2  Klid    Data  Opis
-# pop_data.remove(pop_data[10394])
-# pop_data.remove(pop_data[10395])#удаляем пустой
-
-# # геокодер
-# def my_geocoder(adr_name):
-#    sleep(0.1)
-#    g = geocoder.google(adr_name,key='AIzaSyAI-CpmDbR-GMHe4DIXigJhOmEH96az7HI')
-#    result_geo=g.latlng
-#    # print(result_geo)
-#    return result_geo
 
 # готовлю данные для пандас
 dates_pov=[]
